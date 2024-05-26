@@ -16,7 +16,7 @@ export function Navbar() {
         className={cn(
           "z-50",
           "flex h-[3.5rem] px-4",
-          "bg-accent/20 w-full items-center border-b"
+          "w-full items-center border-b bg-accent/20"
         )}
       >
         <div className="hidden select-none text-xl font-extrabold uppercase md:block">
@@ -27,21 +27,7 @@ export function Navbar() {
           <div className="hidden items-center gap-4 text-lg sm:gap-8 sm:pr-8 md:flex">
             <Link href="/" className="hover:underline">
               Home
-            </Link>
-            <Link
-              target="_blank"
-              href="https://github.com/riad-azz/instagram-video-downloader"
-              className="hover:underline"
-            >
-              Github
             </Link>{" "}
-            <Link
-              target="_blank"
-              href="https://github.com/riad-azz"
-              className="hover:underline"
-            >
-              Creator
-            </Link>
           </div>
           <ThemeToggle />
         </div>
