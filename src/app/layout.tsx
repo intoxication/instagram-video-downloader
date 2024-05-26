@@ -3,13 +3,13 @@ import { DM_Sans as FontSans } from "next/font/google";
 
 import "@/styles/globals.css";
 
-import { Navbar } from "/components/navbar";
-import { Footer } from "/components/footer";
+import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
 
-import { ThemeProvider } from "/components/providers/theme-provider";
-import { ReactQueryProvider } from "/components/providers/react-query-provider";
+import { ThemeProvider } from "@/components/providers/theme-provider";
+import { ReactQueryProvider } from "@/components/providers/react-query-provider";
 
-import { cn } from "/lib/utils";
+import { cn } from "@/lib/utils";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={cn(
           fontSans.variable,
-          "bg-background overflow-x-hidden font-sans antialiased"
+          "overflow-x-hidden bg-background font-sans antialiased"
         )}
       >
         <ThemeProvider
